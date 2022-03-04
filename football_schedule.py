@@ -1,11 +1,16 @@
+from datetime import datetime
 from bs4 import BeautifulSoup
 import requests
 
 URL = "https://www.goal.com/en-in/fixtures/"
+date_today = datetime.now().strftime("%Y-%m-%d")
 
 
-def get_schedule(date):
-    """Provide date in YYYY-MM-DD format as a string."""
+def get_schedule(date=date_today):
+    """
+    Provide date in YYYY-MM-DD format as a string.
+    If no argument is provided, it defaults to today's date
+    """
 
     response = requests.get(URL + date)
     response.raise_for_status()
