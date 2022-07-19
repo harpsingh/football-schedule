@@ -3,9 +3,11 @@ A simple web scraper to get football match schedules from www.goal.com site.
 
 # Usage
 1. Clone repository `git clone https://github.com/harpsingh/football-schedule.git`
-2. CD to the directory and install packages `pip install -r requirements.txt`
-3. Provide date as a string argument in `main.py` and run it - `python main.py`.
-  <code>
+2. Change to the cloned directory `cd football-schedule`
+3. Create python virtual environment `python -m venv venv`
+4. Install packages `pip install -r requirements.txt`
+5. Provide date as a string argument in `main.py` and run it - `python main.py`.
+  `
     [{'competition': 'Premier League',
     'matches': [{'away_team': 'Newcastle United',
                  'home_team': 'Everton',
@@ -24,4 +26,4 @@ A simple web scraper to get football match schedules from www.goal.com site.
                 {'away_team': 'Sevilla',
                  'home_team': 'West Ham United',
                  'time': '18/03/22 (1:30 AM IST)'}]}]
-  </code>
+  `
